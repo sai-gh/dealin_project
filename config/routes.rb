@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # Routes with ID have to be below other routes, otherwise they will be matched first and the other routes will never be reached
   get "posts/:postid", to: "posts#show"
-
+  post "posts", to: "posts#create"
 
 
 
